@@ -21,3 +21,4 @@ int main()
     cout << v-dp[v];
 }
 ```
+构思：知状态转移方程$dp[j] = max(dp[j], dp[j-a[i]]+a[i])$
