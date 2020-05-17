@@ -31,9 +31,7 @@ dp[j] = max(dp[j], dp[j-a[i]]+a[i])
 # 第三题
 上代码
 ```cpp
-#include <stdio.h>
-#include <string.h>
- 
+#include <bits/stdc++.h>
 int dp[201][2001];
 int num[201];
  
@@ -48,10 +46,10 @@ int main()
 		0
 	};
 	int n;
-	scanf("%d", &n);
+	cin>>n;
 	for (int i=1; i<=n; ++i)
 	{
-		scanf("%d",	&num[i]);
+		cout<<num[i];
 		sum[i] = sum[i-1] + num[i];
  
 	}
@@ -89,10 +87,10 @@ int main()
  
 	int ans = dp[n][0];
 	if (ans > 0)
-		printf("%d\n", ans);
+		cout<<ans;
 	else
-		puts("Impossible");
-	
+		cout<<"Impossible";
 	return 0;
 }
+
 ```
