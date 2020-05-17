@@ -25,3 +25,4 @@ int main()
 ```cpp
 dp[j] = max(dp[j], dp[j-a[i]]+a[i])
 ```
+就可以用`dp`做了
